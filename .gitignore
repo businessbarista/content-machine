@@ -1,0 +1,11 @@
+# OS files
+.DS_Store
+
+# Analytics data (personal)
+*.numbers
+*.csv
+
+# Personal content (not part of template)
+archive/
+
+# Keep style-guide.md tracked but users should customize it
