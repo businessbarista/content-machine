@@ -5,8 +5,11 @@
 *.numbers
 *.csv
 
-# Personal content (not part of template)
-archive/
+# Personal content (gitignored — created during --setup or by the user)
+config.md
+style-guide.md
+projects/
+oracle-reports/
+finished_posts/
 finished_content/
-
-# Keep style-guide.md tracked but users should customize it
+archive/

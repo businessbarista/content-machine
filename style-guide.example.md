@@ -1,0 +1,203 @@
+# [Your Name] Writing Style Guide
+
+## A Codification of Your Writing Voice
+
+*Based on analysis of your top-performing posts across X, LinkedIn, and/or newsletter*
+
+---
+
+## Table of Contents
+1. [Executive Summary](#executive-summary)
+2. [Voice & Tone](#voice--tone)
+3. [Hook Formulas](#hook-formulas)
+4. [Content Structures](#content-structures)
+5. [Length Patterns](#length-patterns)
+6. [Topic Categories](#topic-categories)
+7. [Linguistic Fingerprints](#linguistic-fingerprints)
+8. [Engagement Drivers](#engagement-drivers)
+9. [Platform-Specific Patterns](#platform-specific-patterns)
+10. [Templates & Formulas](#templates--formulas)
+
+---
+
+## Executive Summary
+
+### Top Performing Posts
+
+*[When you run `--setup` and provide your best posts, this section gets populated with your actual top performers — the data that the rest of the guide is derived from.]*
+
+| Post | Platform | Impressions | Key Theme |
+|------|----------|-------------|-----------|
+| [Your top post] | X | [number] | [what made it work] |
+| [Your second post] | LinkedIn | [number] | [what made it work] |
+| ... | ... | ... | ... |
+
+### Core Style DNA
+
+*[These are the 4-5 defining characteristics of YOUR voice, distilled from your best content. Examples:]*
+
+- **Conversational authenticity** — writes like talking to a smart friend
+- **Contrarian confidence** — willing to take unpopular positions
+- **Practical value** — always ties back to actionable insights
+- **Vulnerability balanced with authority** — admits not knowing while demonstrating expertise
+
+### The #1 Rule
+
+*[Every writer has a core principle that defines their voice. This is yours. Examples:]*
+
+- "Write like you're texting a friend"
+- "Explain it like you're teaching a curious 12-year-old"
+- "If you wouldn't say it out loud, don't write it"
+
+---
+
+## Voice & Tone
+
+### Primary Voice Characteristics
+
+*[List 5-8 specific voice traits with examples from your actual posts:]*
+
+- **[Trait]:** [Description + example from your content]
+- **[Trait]:** [Description + example]
+
+### Do's and Don'ts
+
+**DO:**
+- [Specific things that make your writing sound like you]
+- [Punctuation habits, capitalization preferences]
+- [Types of humor, references, cultural touchpoints]
+
+**DON'T:**
+- [Things that make your writing sound generic]
+- [Phrases you never use]
+- [Tones that feel inauthentic to your voice]
+
+---
+
+## Hook Formulas
+
+*[Analyze your top-performing hooks and categorize them into repeatable formulas:]*
+
+### Formula 1: [Name] (e.g., "The Bold Prediction")
+**Pattern:** [Structure]
+**Example:** "[Your actual hook that worked]"
+**Why it works:** [Analysis]
+
+### Formula 2: [Name] (e.g., "The Relatable Frustration")
+**Pattern:** [Structure]
+**Example:** "[Your actual hook]"
+**Why it works:** [Analysis]
+
+*[Aim for 5-8 formulas that cover your most successful hooks]*
+
+---
+
+## Content Structures
+
+*[The recurring structures in your best content:]*
+
+### Structure 1: [Name] (e.g., "Numbered Framework")
+- **When to use:** [situation]
+- **Format:** [outline]
+- **Example post:** [reference]
+
+### Structure 2: [Name] (e.g., "Story → Lesson → Action")
+- **When to use:** [situation]
+- **Format:** [outline]
+
+---
+
+## Length Patterns
+
+*[Your ideal lengths by platform, based on what performs:]*
+
+| Platform | Sweet Spot | Range | Notes |
+|----------|-----------|-------|-------|
+| X | [length] | [range] | [notes] |
+| LinkedIn | [length] | [range] | [notes] |
+| Newsletter | [length] | [range] | [notes] |
+
+---
+
+## Topic Categories
+
+*[The themes you write about most, ranked by performance:]*
+
+1. **[Category]** — [description, % of content]
+2. **[Category]** — [description]
+3. **[Category]** — [description]
+
+---
+
+## Linguistic Fingerprints
+
+*[The specific words, phrases, and patterns that make your writing recognizably YOURS:]*
+
+### Signature Phrases
+- "[phrase you use often]"
+- "[another signature phrase]"
+
+### Words You Overuse (In a Good Way)
+- [word/phrase]
+
+### Words You Never Use
+- [corporate speak to avoid]
+- [phrases that don't fit your voice]
+
+### Punctuation Habits
+- [How you use em dashes, periods, commas, ellipses]
+- [Capitalization preferences]
+
+---
+
+## Engagement Drivers
+
+*[What specifically drives engagement in YOUR content:]*
+
+- **[Driver]:** [explanation + example]
+- **[Driver]:** [explanation]
+
+---
+
+## Platform-Specific Patterns
+
+### X (Twitter)
+- [Voice adaptation for X]
+- [Format preferences]
+- [What performs vs. what doesn't]
+
+### LinkedIn
+- [Voice adaptation for LinkedIn]
+- [Format preferences]
+- [What performs vs. what doesn't]
+
+### Newsletter
+- [Voice adaptation for newsletter]
+
+---
+
+## Templates & Formulas
+
+*[Ready-to-use templates based on your most successful patterns:]*
+
+### Template 1: [Name]
+```
+[Hook formula]
+
+[Body structure]
+
+[Close pattern]
+```
+
+### Template 2: [Name]
+```
+[Hook formula]
+
+[Body structure]
+
+[Close pattern]
+```
+
+---
+
+*This guide was generated by The Content Machine's `--setup` command. It gets refined over time through the Learning Loop as you create more content and give feedback.*
