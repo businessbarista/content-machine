@@ -92,6 +92,58 @@ Or let The Oracle find a topic for you:
 | `/content-machine --linkedin [topic]` | LinkedIn post (3,000 char max) |
 | `/content-machine --x-thread [topic]` | X/Twitter thread (10-15 tweets) |
 | `/content-machine --playbook [YouTube URL]` | Playbook from YouTube interview |
+| `/content-machine --podcast-promo [YouTube URL]` | Podcast promo post for X & LinkedIn |
+
+---
+
+## Use All of It or Parts of It
+
+The Content Machine is modular — you can run the full pipeline end-to-end, or jump into any step on its own. Use what you need, skip what you don't.
+
+**Full pipeline** — you have no idea what to write about:
+```
+/content-machine --full
+```
+Runs Oracle → Interview → Production → Refinement → Council → Revision Loop.
+
+**Skip ideation** — you already have a topic or source material:
+```
+/content-machine --interview "my take on why most AI implementations fail"
+/content-machine --playbook https://youtube.com/watch?v=...
+/content-machine --podcast-promo https://youtube.com/watch?v=...
+```
+Jumps straight to extracting content from your idea or source, skipping the Oracle.
+
+**Skip ideation and extraction** — you already have a draft or raw material:
+```
+/content-machine --linkedin
+```
+Then paste your raw notes, transcript, or rough draft. The system refines it into a polished piece using your style guide.
+
+**Editing only** — you have a finished draft and just want feedback:
+```
+/content-machine [paste your draft]
+```
+Sends it directly to the Writer's Council for scoring and feedback. No ideation, no extraction, no drafting.
+
+**Single reviewer** — you just want one perspective:
+```
+/content-machine --reviewer shaan [paste your draft]
+/content-machine --reviewer slop [paste your draft]
+```
+
+**Revision only** — you have council feedback and want to iterate:
+```
+/content-machine --revise [paste your draft]
+```
+
+**Learning only** — you published something and want the system to learn from your edits:
+```
+/content-machine --learn [project-name]
+/content-machine --learn --verbal "hooks should be shorter"
+```
+
+The point: you don't have to use every step every time. The pipeline is a menu, not a checklist.
 
 ---
 
@@ -105,6 +157,7 @@ Content types are modular specs in the `content-types/` directory. Each defines 
 | LinkedIn Post | `content-types/linkedin-post.md` | Standard | Professional-casual with pattern-interrupt hook (3,000 char max) |
 | X Thread | `content-types/x-thread.md` | Standard | Punchy, hook-heavy thread (10-15 tweets) |
 | Playbook | `content-types/playbook.md` | Custom (P1-P5) | Expert playbook from YouTube interviews (2,500-4,000 words) |
+| Podcast Promo | `content-types/podcast-promo.md` | Custom (P1-P5) | Podcast episode promo for X & LinkedIn with standalone tactical value |
 
 ### Creating Your Own Content Type
 
