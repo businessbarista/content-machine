@@ -51,15 +51,31 @@ A complete system for creating publish-ready content from your ideas.
 ├── config.md                   ← Your settings (Slack ID, Oracle channel)
 ├── style-guide.md              ← Your writing voice
 ├── content-lessons.md          ← Accumulated lessons from feedback
+├── .agents/
+│   └── skills/                    ← Auto-loaded Claude Code skills (video)
+│       ├── remotion-best-practices/  ← Remotion video creation rules
+│       ├── ui-ux-pro-max/            ← Design system intelligence
+│       └── copywriting/              ← Conversion copy principles
 ├── content-types/
 │   ├── _template.md            ← Template for creating new content types
 │   ├── long-post.md            ← Long-form post spec
 │   ├── linkedin-post.md        ← LinkedIn post spec
 │   ├── x-thread.md             ← X/Twitter thread spec
-│   └── playbook.md             ← Playbook pipeline + format spec
+│   ├── playbook.md             ← Playbook pipeline + format spec
+│   ├── podcast-promo.md        ← Podcast promo for X & LinkedIn
+│   └── video-clip.md           ← Video editing pipeline + format spec
+├── video/                         ← Remotion project (Node.js)
+│   ├── package.json
+│   ├── src/                       ← Compositions, components, lib
+│   └── public/                    ← Temp assets during render
+├── assets/                        ← Brand assets for video
+│   ├── logos/
+│   ├── fonts/
+│   └── images/
 ├── scripts/
 │   ├── fetch-transcript.sh     ← YouTube transcript fetcher
-│   └── daily-oracle.sh         ← Automated daily Oracle scanner
+│   ├── daily-oracle.sh         ← Automated daily Oracle scanner
+│   └── setup-video.sh          ← One-time video setup (Remotion + Whisper)
 ├── projects/
 │   └── [project-name]/
 │       ├── 1_oracle/           ← Topic discovery from apps
@@ -111,6 +127,13 @@ A complete system for creating publish-ready content from your ideas.
 /content-machine --linkedin [topic]
 /content-machine --x-thread [topic]
 /content-machine --playbook [YouTube URL]
+/content-machine --podcast-promo [YouTube URL]
+```
+
+**Video Clip (Custom Pipeline):**
+```
+/content-machine --video-clip [path-to-video.mp4]
+/content-machine --video-clip [path-to-video.mp4] --with-posts
 ```
 
 **Council Review Only (Steps 5-6):**
@@ -1078,10 +1101,14 @@ Some content types define their own custom pipeline instead of using Steps 1-6. 
 
 **Currently available custom pipelines:**
 - **Playbook** (`content-types/playbook.md`) — YouTube → Transcript → Extraction → Draft → Playbook Council → Revision
+- **Podcast Promo** (`content-types/podcast-promo.md`) — Episode Intake → Hook Mining → Tactic Extraction → Draft (X + LinkedIn)
+- **Video Clip** (`content-types/video-clip.md`) — Ingest → Analyze → Edit Plan → Written Content (optional) → Video Build → Review
 
 To invoke a custom pipeline directly:
 ```
 /content-machine --playbook [YouTube URL]
+/content-machine --podcast-promo [YouTube URL]
+/content-machine --video-clip [path-to-video.mp4]
 ```
 
 ---

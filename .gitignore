@@ -13,3 +13,18 @@ oracle-reports/
 finished_posts/
 finished_content/
 archive/
+
+# Video project
+video/node_modules/
+video/out/
+video/.remotion/
+video/whisper.cpp/
+video/public/*.mp4
+video/public/*.mov
+video/public/*.webm
+video/public/*.wav
+video/public/*.json
+
+# Environment
+.env
+.env.local

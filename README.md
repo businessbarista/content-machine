@@ -1,6 +1,6 @@
 # The Content Machine
 
-A complete content creation system built as a Claude Code skill. Takes you from blank page to publish-ready content through a structured pipeline — The Oracle finds your topic, the Interview Panel extracts your stories, and the Writer's Council refines until it's a 9/10.
+A complete content creation system built as a Claude Code skill. Takes you from blank page to publish-ready content — written and video — through a structured pipeline. The Oracle finds your topic, the Interview Panel extracts your stories, and the Writer's Council refines until it's a 9/10. Upload a short-form video and get both an edited clip (with captions, branding, transitions) and written posts.
 
 **Each person writes in their own voice.** You create a personal style guide during setup, and the system applies it to every draft.
 
@@ -43,6 +43,7 @@ cd content-machine
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI installed
 - (Optional) Slack MCP server — for The Oracle to scan your Slack
 - (Optional) Notion MCP server — for The Oracle to scan your Notion
+- (For video editing) Node.js 18+ and ffmpeg — run `bash scripts/setup-video.sh` after cloning
 
 ### 3. Run setup
 
@@ -93,6 +94,7 @@ Or let The Oracle find a topic for you:
 | `/content-machine --x-thread [topic]` | X/Twitter thread (10-15 tweets) |
 | `/content-machine --playbook [YouTube URL]` | Playbook from YouTube interview |
 | `/content-machine --podcast-promo [YouTube URL]` | Podcast promo post for X & LinkedIn |
+| `/content-machine --video-clip [video path]` | Edit video with captions + branding (+ optional written posts) |
 
 ---
 
@@ -137,6 +139,12 @@ Sends it directly to the Writer's Council for scoring and feedback. No ideation,
 /content-machine --revise [paste your draft]
 ```
 
+**Video editing** — you have a short-form video and want it polished with captions + branding:
+```
+/content-machine --video-clip path/to/video.mp4
+```
+Transcribes, adds TikTok-style captions, intro/outro, and renders via Remotion. Add `--with-posts` to also generate written content from the transcript.
+
 **Learning only** — you published something and want the system to learn from your edits:
 ```
 /content-machine --learn [project-name]
@@ -158,6 +166,7 @@ Content types are modular specs in the `content-types/` directory. Each defines 
 | X Thread | `content-types/x-thread.md` | Standard | Punchy, hook-heavy thread (10-15 tweets) |
 | Playbook | `content-types/playbook.md` | Custom (P1-P5) | Expert playbook from YouTube interviews (2,500-4,000 words) |
 | Podcast Promo | `content-types/podcast-promo.md` | Custom (P1-P5) | Podcast episode promo for X & LinkedIn with standalone tactical value |
+| Video Clip | `content-types/video-clip.md` | Custom (V1-V6) | Edit short-form video with captions, branding, transitions + optional written posts |
 
 ### Creating Your Own Content Type
 
@@ -183,6 +192,11 @@ content-machine/
 ├── .claude/
 │   └── commands/
 │       └── content-machine.md     ← Core system (the skill)
+├── .agents/
+│   └── skills/                    ← Auto-loaded Claude Code skills
+│       ├── remotion-best-practices/  ← Video creation rules (30+ rule files)
+│       ├── ui-ux-pro-max/            ← Design system (97 colors, 57 fonts, 50+ styles)
+│       └── copywriting/              ← Conversion copy principles
 ├── README.md                      ← You are here
 ├── config.md                      ← Your settings (gitignored, created during --setup)
 ├── style-guide.md                 ← Your writing voice (gitignored, created during --setup)
@@ -193,10 +207,18 @@ content-machine/
 │   ├── long-post.md               ← Long-form post spec
 │   ├── linkedin-post.md           ← LinkedIn post spec
 │   ├── x-thread.md                ← X/Twitter thread spec
-│   └── playbook.md                ← Playbook pipeline + format spec
+│   ├── playbook.md                ← Playbook pipeline + format spec
+│   ├── podcast-promo.md           ← Podcast promo for X & LinkedIn
+│   └── video-clip.md              ← Video editing pipeline + format spec
+├── video/                         ← Remotion project for video editing
+│   ├── package.json
+│   ├── src/                       ← Compositions, components, transcription
+│   └── public/                    ← Temp assets during render
+├── assets/                        ← Brand assets for video (logos, fonts, images)
 ├── scripts/
 │   ├── fetch-transcript.sh        ← YouTube transcript fetcher
-│   └── daily-oracle.sh            ← Automated daily Oracle scanner
+│   ├── daily-oracle.sh            ← Automated daily Oracle scanner
+│   └── setup-video.sh             ← One-time video setup (Remotion + Whisper)
 ├── projects/                      ← Your work (gitignored)
 │   └── [project-name]/
 │       ├── 1_oracle/
