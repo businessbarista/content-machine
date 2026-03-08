@@ -1,0 +1,369 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 2400" width="1200" height="2400">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap');
+      text { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    </style>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#111111"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35"/>
+      <stop offset="100%" style="stop-color:#FF8C42"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90D9"/>
+      <stop offset="100%" style="stop-color:#67B8F7"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ECC71"/>
+      <stop offset="100%" style="stop-color:#58D68D"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9B59B6"/>
+      <stop offset="100%" style="stop-color:#BB8FCE"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E74C3C"/>
+      <stop offset="100%" style="stop-color:#F1948A"/>
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1ABC9C"/>
+      <stop offset="100%" style="stop-color:#48C9B0"/>
+    </linearGradient>
+    <linearGradient id="yellowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F39C12"/>
+      <stop offset="100%" style="stop-color:#F7DC6F"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="2400" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.3" opacity="0.05"/>
+  </pattern>
+  <rect width="1200" height="2400" fill="url(#grid)"/>
+
+  <!-- ==================== HEADER ==================== -->
+  <text x="600" y="70" text-anchor="middle" fill="#FF6B35" font-size="16" font-weight="700" letter-spacing="6">CLAUDE CODE SKILL</text>
+  <text x="600" y="130" text-anchor="middle" fill="#ffffff" font-size="56" font-weight="900" letter-spacing="2">THE CONTENT</text>
+  <text x="600" y="190" text-anchor="middle" fill="#ffffff" font-size="56" font-weight="900" letter-spacing="2">MACHINE</text>
+  <text x="600" y="235" text-anchor="middle" fill="#888888" font-size="18" font-weight="400">From blank page to publish-ready content in 6 steps</text>
+  <text x="600" y="262" text-anchor="middle" fill="#666666" font-size="15" font-weight="400">Your voice. Your stories. AI-structured pipeline.</text>
+
+  <!-- Divider -->
+  <line x1="300" y1="290" x2="900" y2="290" stroke="#FF6B35" stroke-width="2" opacity="0.4"/>
+
+  <!-- ==================== STEP 1: THE ORACLE ==================== -->
+  <g transform="translate(0, 320)">
+    <!-- Step number badge -->
+    <circle cx="100" cy="40" r="28" fill="url(#orangeGrad)" filter="url(#glow)"/>
+    <text x="100" y="47" text-anchor="middle" fill="#fff" font-size="20" font-weight="800">1</text>
+
+    <!-- Title -->
+    <text x="145" y="35" fill="#FF6B35" font-size="14" font-weight="600" letter-spacing="3">STEP 1</text>
+    <text x="145" y="58" fill="#ffffff" font-size="28" font-weight="800">THE ORACLE</text>
+    <text x="415" y="58" fill="#666" font-size="16" font-weight="400">Mines your apps for content "spikes"</text>
+
+    <!-- Card -->
+    <rect x="60" y="78" width="1080" height="110" rx="12" fill="#1a1a1a" stroke="#333" stroke-width="1" filter="url(#shadow)"/>
+
+    <!-- Slack -->
+    <rect x="90" y="98" width="220" height="68" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="115" y="125" fill="#FF6B35" font-size="22">&#x1F4AC;</text>
+    <text x="145" y="126" fill="#fff" font-size="16" font-weight="700">Slack</text>
+    <text x="145" y="148" fill="#999" font-size="12">POVs, rants, teaching moments</text>
+
+    <!-- Notion -->
+    <rect x="330" y="98" width="220" height="68" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="355" y="125" fill="#FF6B35" font-size="22">&#x1F4DD;</text>
+    <text x="385" y="126" fill="#fff" font-size="16" font-weight="700">Notion</text>
+    <text x="385" y="148" fill="#999" font-size="12">Insights, frameworks, lessons</text>
+
+    <!-- Output -->
+    <rect x="750" y="98" width="360" height="68" rx="8" fill="#1e1e1e" stroke="#FF6B35" stroke-width="0.5"/>
+    <text x="780" y="126" fill="#FF6B35" font-size="14" font-weight="600">OUTPUT</text>
+    <text x="780" y="148" fill="#ccc" font-size="13">Ranked content spikes with topic + angle</text>
+
+    <!-- Arrow -->
+    <text x="600" y="137" text-anchor="middle" fill="#FF6B35" font-size="24">&#x2192;</text>
+  </g>
+
+  <!-- Connector arrow -->
+  <line x1="600" y1="520" x2="600" y2="570" stroke="#444" stroke-width="2" stroke-dasharray="6,4"/>
+  <polygon points="594,568 600,580 606,568" fill="#444"/>
+
+  <!-- ==================== STEP 2: THE INTERVIEW PANEL ==================== -->
+  <g transform="translate(0, 590)">
+    <circle cx="100" cy="40" r="28" fill="url(#blueGrad)" filter="url(#glow)"/>
+    <text x="100" y="47" text-anchor="middle" fill="#fff" font-size="20" font-weight="800">2</text>
+
+    <text x="145" y="35" fill="#4A90D9" font-size="14" font-weight="600" letter-spacing="3">STEP 2</text>
+    <text x="145" y="58" fill="#ffffff" font-size="28" font-weight="800">THE INTERVIEW PANEL</text>
+    <text x="530" y="58" fill="#666" font-size="16" font-weight="400">6 AI interviewers extract your stories</text>
+
+    <!-- Interviewer cards -->
+    <rect x="60" y="78" width="1080" height="175" rx="12" fill="#1a1a1a" stroke="#333" stroke-width="1" filter="url(#shadow)"/>
+
+    <!-- Row 1 -->
+    <rect x="85" y="96" width="330" height="55" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="105" y="120" fill="#4A90D9" font-size="14" font-weight="700">Tim Ferriss</text>
+    <text x="105" y="138" fill="#999" font-size="11">Tactical deconstruction of processes</text>
+
+    <rect x="435" y="96" width="330" height="55" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="455" y="120" fill="#4A90D9" font-size="14" font-weight="700">Joe Rogan</text>
+    <text x="455" y="138" fill="#999" font-size="11">Pulls stories through curiosity</text>
+
+    <rect x="785" y="96" width="330" height="55" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="805" y="120" fill="#4A90D9" font-size="14" font-weight="700">Larry King</text>
+    <text x="805" y="138" fill="#999" font-size="11">Direct questions: "Why?" "How?"</text>
+
+    <!-- Row 2 -->
+    <rect x="85" y="162" width="330" height="55" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="105" y="186" fill="#4A90D9" font-size="14" font-weight="700">Howard Stern</text>
+    <text x="105" y="204" fill="#999" font-size="11">Gets you to reveal the unexpected</text>
+
+    <rect x="435" y="162" width="330" height="55" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="455" y="186" fill="#4A90D9" font-size="14" font-weight="700">Michael Barbaro</text>
+    <text x="455" y="204" fill="#999" font-size="11">Makes complex ideas accessible</text>
+
+    <rect x="785" y="162" width="330" height="55" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="805" y="186" fill="#4A90D9" font-size="14" font-weight="700">Barbara Walters</text>
+    <text x="805" y="204" fill="#999" font-size="11">Finds the human truth</text>
+
+    <!-- Output -->
+    <rect x="85" y="228" width="1030" height="16" rx="4" fill="transparent"/>
+    <text x="600" y="242" text-anchor="middle" fill="#4A90D9" font-size="12" font-weight="500">OUTPUT: Deep interview transcript with stories, data points, and frameworks</text>
+  </g>
+
+  <!-- Connector arrow -->
+  <line x1="600" y1="855" x2="600" y2="905" stroke="#444" stroke-width="2" stroke-dasharray="6,4"/>
+  <polygon points="594,903 600,915 606,903" fill="#444"/>
+
+  <!-- ==================== STEP 3: PRODUCTION ==================== -->
+  <g transform="translate(0, 925)">
+    <circle cx="100" cy="40" r="28" fill="url(#greenGrad)" filter="url(#glow)"/>
+    <text x="100" y="47" text-anchor="middle" fill="#fff" font-size="20" font-weight="800">3</text>
+
+    <text x="145" y="35" fill="#2ECC71" font-size="14" font-weight="600" letter-spacing="3">STEP 3</text>
+    <text x="145" y="58" fill="#ffffff" font-size="28" font-weight="800">PRODUCTION</text>
+    <text x="360" y="58" fill="#666" font-size="16" font-weight="400">Raw .md file — the source of truth</text>
+
+    <rect x="60" y="78" width="1080" height="90" rx="12" fill="#1a1a1a" stroke="#333" stroke-width="1" filter="url(#shadow)"/>
+
+    <rect x="90" y="95" width="480" height="52" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="115" y="118" fill="#2ECC71" font-size="14" font-weight="700">Interview transcript</text>
+    <text x="115" y="136" fill="#999" font-size="12">Your exact words, stories, and examples</text>
+
+    <text x="600" y="124" text-anchor="middle" fill="#2ECC71" font-size="24">&#x2192;</text>
+
+    <rect x="630" y="95" width="480" height="52" rx="8" fill="#1e1e1e" stroke="#2ECC71" stroke-width="0.5"/>
+    <text x="655" y="118" fill="#2ECC71" font-size="14" font-weight="700">raw.md</text>
+    <text x="740" y="118" fill="#999" font-size="14">— Sacred source file (never paraphrased)</text>
+    <text x="655" y="136" fill="#999" font-size="12">Organized notes, quotes, data, and angles</text>
+  </g>
+
+  <!-- Connector arrow -->
+  <line x1="600" y1="1105" x2="600" y2="1155" stroke="#444" stroke-width="2" stroke-dasharray="6,4"/>
+  <polygon points="594,1153 600,1165 606,1153" fill="#444"/>
+
+  <!-- ==================== STEP 4: REFINEMENT ==================== -->
+  <g transform="translate(0, 1175)">
+    <circle cx="100" cy="40" r="28" fill="url(#purpleGrad)" filter="url(#glow)"/>
+    <text x="100" y="47" text-anchor="middle" fill="#fff" font-size="20" font-weight="800">4</text>
+
+    <text x="145" y="35" fill="#9B59B6" font-size="14" font-weight="600" letter-spacing="3">STEP 4</text>
+    <text x="145" y="58" fill="#ffffff" font-size="28" font-weight="800">REFINEMENT</text>
+    <text x="375" y="58" fill="#666" font-size="16" font-weight="400">Pick a content type, draft with your style</text>
+
+    <rect x="60" y="78" width="1080" height="170" rx="12" fill="#1a1a1a" stroke="#333" stroke-width="1" filter="url(#shadow)"/>
+
+    <!-- Style guide callout -->
+    <rect x="85" y="95" width="260" height="65" rx="8" fill="#1e1e1e" stroke="#9B59B6" stroke-width="1"/>
+    <text x="110" y="118" fill="#9B59B6" font-size="14" font-weight="700">Your Style Guide</text>
+    <text x="110" y="136" fill="#999" font-size="11">Personal voice profile applied</text>
+    <text x="110" y="150" fill="#999" font-size="11">to every draft automatically</text>
+
+    <!-- Content types -->
+    <text x="390" y="107" fill="#9B59B6" font-size="13" font-weight="700" letter-spacing="1">CONTENT TYPES</text>
+
+    <rect x="390" y="117" width="155" height="36" rx="6" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="405" y="140" fill="#fff" font-size="13" font-weight="500">Long Post</text>
+    <text x="490" y="140" fill="#777" font-size="11">1-2.5K words</text>
+
+    <rect x="555" y="117" width="155" height="36" rx="6" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="570" y="140" fill="#fff" font-size="13" font-weight="500">LinkedIn</text>
+    <text x="640" y="140" fill="#777" font-size="11">3K char max</text>
+
+    <rect x="720" y="117" width="155" height="36" rx="6" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="735" y="140" fill="#fff" font-size="13" font-weight="500">X Thread</text>
+    <text x="810" y="140" fill="#777" font-size="11">10-15 tweets</text>
+
+    <rect x="885" y="117" width="230" height="36" rx="6" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="900" y="140" fill="#fff" font-size="13" font-weight="500">Video Clip</text>
+    <text x="975" y="140" fill="#777" font-size="11">Captions + branding</text>
+
+    <rect x="390" y="162" width="155" height="36" rx="6" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="405" y="185" fill="#fff" font-size="13" font-weight="500">Playbook</text>
+    <text x="480" y="185" fill="#777" font-size="11">2.5-4K words</text>
+
+    <rect x="555" y="162" width="155" height="36" rx="6" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="570" y="185" fill="#fff" font-size="13" font-weight="500">Podcast Promo</text>
+
+    <rect x="720" y="162" width="155" height="36" rx="6" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="735" y="185" fill="#fff" font-size="13" font-weight="500">+ Custom Types</text>
+
+    <!-- Modular note -->
+    <text x="110" y="225" fill="#777" font-size="12" font-style="italic">Modular: copy _template.md to create your own content types</text>
+  </g>
+
+  <!-- Connector arrow -->
+  <line x1="600" y1="1420" x2="600" y2="1470" stroke="#444" stroke-width="2" stroke-dasharray="6,4"/>
+  <polygon points="594,1468 600,1480 606,1468" fill="#444"/>
+
+  <!-- ==================== STEP 5: THE WRITER'S COUNCIL ==================== -->
+  <g transform="translate(0, 1490)">
+    <circle cx="100" cy="40" r="28" fill="url(#redGrad)" filter="url(#glow)"/>
+    <text x="100" y="47" text-anchor="middle" fill="#fff" font-size="20" font-weight="800">5</text>
+
+    <text x="145" y="35" fill="#E74C3C" font-size="14" font-weight="600" letter-spacing="3">STEP 5</text>
+    <text x="145" y="58" fill="#ffffff" font-size="28" font-weight="800">THE WRITER'S COUNCIL</text>
+    <text x="520" y="58" fill="#666" font-size="16" font-weight="400">6 expert reviewers score your draft</text>
+
+    <rect x="60" y="78" width="1080" height="175" rx="12" fill="#1a1a1a" stroke="#333" stroke-width="1" filter="url(#shadow)"/>
+
+    <!-- Row 1 -->
+    <rect x="85" y="96" width="330" height="55" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="105" y="118" fill="#E74C3C" font-size="14" font-weight="700">Morgan Housel</text>
+    <text x="105" y="136" fill="#999" font-size="11">"Will this matter in 10 years?"</text>
+
+    <rect x="435" y="96" width="330" height="55" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="455" y="118" fill="#E74C3C" font-size="14" font-weight="700">Tim Urban</text>
+    <text x="455" y="136" fill="#999" font-size="11">"Is this confusing anywhere?"</text>
+
+    <rect x="785" y="96" width="330" height="55" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="805" y="118" fill="#E74C3C" font-size="14" font-weight="700">Shaan Puri</text>
+    <text x="805" y="136" fill="#999" font-size="11">"Would I stop scrolling?"</text>
+
+    <!-- Row 2 -->
+    <rect x="85" y="162" width="330" height="55" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="105" y="186" fill="#E74C3C" font-size="14" font-weight="700">Greg Isenberg</text>
+    <text x="105" y="204" fill="#999" font-size="11">"What can someone steal from this?"</text>
+
+    <rect x="435" y="162" width="330" height="55" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="455" y="186" fill="#E74C3C" font-size="14" font-weight="700">David Perell</text>
+    <text x="455" y="204" fill="#999" font-size="11">"Is this POP? (Personal, Observational, Playful)"</text>
+
+    <rect x="785" y="162" width="330" height="55" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="805" y="186" fill="#E74C3C" font-size="14" font-weight="700">Slop Detector</text>
+    <text x="805" y="204" fill="#999" font-size="11">"Could a machine have written this?"</text>
+
+    <!-- Score output -->
+    <text x="600" y="242" text-anchor="middle" fill="#E74C3C" font-size="12" font-weight="500">OUTPUT: Individual scores + specific feedback from each council member</text>
+  </g>
+
+  <!-- Connector arrow -->
+  <line x1="600" y1="1755" x2="600" y2="1805" stroke="#444" stroke-width="2" stroke-dasharray="6,4"/>
+  <polygon points="594,1803 600,1815 606,1803" fill="#444"/>
+
+  <!-- ==================== STEP 6: REVISION LOOP ==================== -->
+  <g transform="translate(0, 1825)">
+    <circle cx="100" cy="40" r="28" fill="url(#tealGrad)" filter="url(#glow)"/>
+    <text x="100" y="47" text-anchor="middle" fill="#fff" font-size="20" font-weight="800">6</text>
+
+    <text x="145" y="35" fill="#1ABC9C" font-size="14" font-weight="600" letter-spacing="3">STEP 6</text>
+    <text x="145" y="58" fill="#ffffff" font-size="28" font-weight="800">REVISION LOOP</text>
+    <text x="415" y="58" fill="#666" font-size="16" font-weight="400">Iterate until the Council scores 9/10</text>
+
+    <rect x="60" y="78" width="1080" height="100" rx="12" fill="#1a1a1a" stroke="#333" stroke-width="1" filter="url(#shadow)"/>
+
+    <!-- Loop visualization -->
+    <rect x="90" y="98" width="200" height="52" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="115" y="120" fill="#1ABC9C" font-size="14" font-weight="700">Apply feedback</text>
+    <text x="115" y="138" fill="#999" font-size="11">Fix council critiques</text>
+
+    <text x="320" y="127" fill="#1ABC9C" font-size="20">&#x2192;</text>
+
+    <rect x="350" y="98" width="200" height="52" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="375" y="120" fill="#1ABC9C" font-size="14" font-weight="700">Re-submit</text>
+    <text x="375" y="138" fill="#999" font-size="11">Council re-scores</text>
+
+    <text x="580" y="127" fill="#1ABC9C" font-size="20">&#x2192;</text>
+
+    <rect x="610" y="98" width="200" height="52" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="635" y="120" fill="#1ABC9C" font-size="14" font-weight="700">Score check</text>
+    <text x="635" y="138" fill="#999" font-size="11">9/10 yet?</text>
+
+    <text x="838" y="127" fill="#1ABC9C" font-size="20">&#x2192;</text>
+
+    <rect x="870" y="98" width="240" height="52" rx="8" fill="#1e1e1e" stroke="#1ABC9C" stroke-width="1"/>
+    <text x="895" y="120" fill="#1ABC9C" font-size="14" font-weight="700">PUBLISH-READY</text>
+    <text x="895" y="138" fill="#999" font-size="11">Final approved content</text>
+
+    <!-- Loop back arrow text -->
+    <text x="510" y="168" text-anchor="middle" fill="#666" font-size="11" font-style="italic">If below 9/10, loops back with targeted improvements</text>
+  </g>
+
+  <!-- ==================== DIVIDER ==================== -->
+  <line x1="100" y1="2020" x2="1100" y2="2020" stroke="#333" stroke-width="1"/>
+  <text x="600" y="2010" text-anchor="middle" fill="#0a0a0a" font-size="14" font-weight="700">---</text>
+
+  <!-- ==================== LEARNING LOOP ==================== -->
+  <g transform="translate(0, 2040)">
+    <circle cx="100" cy="40" r="28" fill="url(#yellowGrad)" filter="url(#glow)"/>
+    <text x="100" y="46" text-anchor="middle" fill="#fff" font-size="18" font-weight="800">&#x21BB;</text>
+
+    <text x="145" y="35" fill="#F39C12" font-size="14" font-weight="600" letter-spacing="3">BONUS</text>
+    <text x="145" y="58" fill="#ffffff" font-size="28" font-weight="800">THE LEARNING LOOP</text>
+    <text x="490" y="58" fill="#666" font-size="16" font-weight="400">System gets smarter with every piece</text>
+
+    <rect x="60" y="78" width="1080" height="95" rx="12" fill="#1a1a1a" stroke="#333" stroke-width="1" filter="url(#shadow)"/>
+
+    <rect x="90" y="95" width="310" height="55" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="115" y="118" fill="#F39C12" font-size="14" font-weight="700">--learn [project]</text>
+    <text x="115" y="137" fill="#999" font-size="11">Diffs draft vs final, extracts lessons</text>
+
+    <rect x="420" y="95" width="310" height="55" rx="8" fill="#1e1e1e" stroke="#444" stroke-width="0.5"/>
+    <text x="445" y="118" fill="#F39C12" font-size="14" font-weight="700">--learn --verbal</text>
+    <text x="445" y="137" fill="#999" font-size="11">Direct feedback turned into lessons</text>
+
+    <rect x="750" y="95" width="360" height="55" rx="8" fill="#1e1e1e" stroke="#F39C12" stroke-width="0.5"/>
+    <text x="775" y="118" fill="#F39C12" font-size="14" font-weight="700">content-lessons.md</text>
+    <text x="775" y="137" fill="#999" font-size="11">30-lesson cap, proven ones → style guide</text>
+  </g>
+
+  <!-- ==================== SUPPORTING SKILLS ==================== -->
+  <g transform="translate(0, 2200)">
+    <text x="600" y="0" text-anchor="middle" fill="#555" font-size="13" font-weight="600" letter-spacing="3">SUPPORTING SKILLS</text>
+
+    <rect x="100" y="20" width="280" height="55" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="0.5"/>
+    <text x="125" y="44" fill="#fff" font-size="14" font-weight="600">Remotion Best Practices</text>
+    <text x="125" y="62" fill="#777" font-size="11">30+ rules for video creation</text>
+
+    <rect x="410" y="20" width="280" height="55" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="0.5"/>
+    <text x="435" y="44" fill="#fff" font-size="14" font-weight="600">UI/UX Pro Max</text>
+    <text x="435" y="62" fill="#777" font-size="11">Design system (colors, fonts, styles)</text>
+
+    <rect x="720" y="20" width="280" height="55" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="0.5"/>
+    <text x="745" y="44" fill="#fff" font-size="14" font-weight="600">Copywriting</text>
+    <text x="745" y="62" fill="#777" font-size="11">Conversion copy frameworks</text>
+  </g>
+
+  <!-- ==================== FOOTER ==================== -->
+  <text x="600" y="2360" text-anchor="middle" fill="#444" font-size="13" font-weight="400">Built by Alex Lieberman  |  github.com/businessbarista/content-machine</text>
+  <text x="600" y="2385" text-anchor="middle" fill="#333" font-size="11">Run /content-machine --setup to get started</text>
+
+</svg>
